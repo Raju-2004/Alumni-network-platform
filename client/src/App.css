@@ -1,0 +1,1082 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Raleway&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Roboto', sans-serif;   */
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+body::-webkit-scrollbar{
+  width: 0;
+}
+
+body{
+    /* global 94%+ browsers support */
+    /* background: linear-gradient(111deg, rgba(220, 214, 247, 1) 0%, rgba(166, 177, 225, 1) 15%, rgba(66, 72, 116, 1) 100%); */
+    background: linear-gradient(9deg, rgba(220, 214, 247, 1) 0%, rgba(166, 177, 225, 1) 22%, rgba(66, 72, 116, 1) 100%);
+}
+
+.Header{     
+  display: flex;
+  /* background-color: #f7f5f5; */
+  justify-content: space-between;
+  height: 100px;
+  /* position: fixed; */
+}
+.Header .logo{
+  color: white;
+  margin: 30px 30px;
+}
+.Header .list ul{
+  list-style: none;
+  display: inline-flex;
+  font-size: larger;
+}
+.Header .list ul>li{
+  padding: 8px;
+  margin: 30px 25px;
+  border-radius: 5px;
+  background-color: #424874;
+  transition: 0.5s;
+}
+.Header .list ul li .Links{
+  color: white;
+  text-decoration: none;
+}
+.Header .list ul>li:hover{
+  background-color: white;
+}
+.Header .list ul li .Links:hover{
+  color: #424874;
+}
+
+.Image .img{
+  position: absolute;
+  width: 100%;
+  height: 600px;
+}
+.Image .img img{
+  height: 100%;
+  width: 100%;
+}
+.Image .content{
+  position: relative;
+  z-index: 9998;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Image .content .title{
+  color: white;
+  margin-top: 45px;
+  font-size: 45px;
+  font-weight: bold;
+}
+.Image .content a{
+  text-decoration: none;
+  padding: 8px;
+  color: beige;
+  font-size: 1.7rem;
+  margin: 30px 25px;
+  border-radius: 5px;
+  background-color: hsl(233, 27%, 36%);
+}
+.Achievements{
+  background-color: #f7f5f5;
+}
+.Achievements h1{
+  /* margin-top: 25px; */
+  padding-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 600px;
+}
+.alumni{
+  margin-left: 20px;
+  padding: 20PX;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  /* display: grid; */
+  /* grid-template-columns: auto auto auto; */
+  /* justify-content: space-around; */
+}
+.alumni::-webkit-scrollbar{
+  width: 0;
+}
+
+.AlumniCard{
+  padding: 15px;
+  width: 354.6px;
+  margin: 10PX;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+}
+.AlumniCard p{
+  margin-top: 5px;
+}
+.AlumniCard span{
+  color: #424874;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.Dashboard{
+  background-color: #f7f5f5;
+  display: flex;
+}
+.Dashboard .Navbar{
+  background-color: #DCD6F7;
+  padding-top: 50px;
+  /* width: 15.4% ; */
+}
+.Dashboard .Navbar ul{
+  list-style: none;
+  font-size: larger;
+}
+.Dashboard .Navbar ul>li{
+  text-align: center;
+  padding: 10px;
+  margin: 45px 25px;
+  border-radius: 5px;
+  background-color: #424874;
+}
+.Dashboard .Navbar ul>li a{
+  color: #f7f5f5;
+  text-decoration: none;
+}
+
+.Signup-container{
+  padding: 80px;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+.Signup-container .alumni-section,.student-section{
+  background-color: #F4EEFF;
+  width: 35%;
+  padding: 25px;
+  border-radius: 5px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 2px 2px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Signup-container .alumni-section h2,.student-section h2{
+  border-bottom: 5px solid #424874;
+  font-size: 2.2rem;
+}
+.Signup-container .alumni-section p,.student-section p{
+  text-align:left;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 25px;
+}
+.Signup-container .alumni-section button,.student-section button{
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  margin: 50px 80px;
+  background-color: #424874;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.Signup-container .alumni-section button:hover,.student-section button:hover{
+  background-color: #494b9b;
+}
+
+.AlumniSignUp ,.StudentSignUp{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  /* box-shadow: 10px 10px 10px rgba(255, 253, 253, 0.1); */
+}
+.AlumniSignUp h2,.StudentSignUp h2{
+  text-decoration: underline;
+  font-size: 2.2rem;
+}
+.AlumniSignUp p,.StudentSignUp p{
+  text-align:left;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 25px;
+}
+.AlumniSignUp .buttons,.StudentSignUp .buttons {
+  display: flex;
+}
+
+.AlumniSignUp .buttons .btn1,.StudentSignUp .buttons .btn1{
+  border: none;
+  border-radius: 5px 0px 0px 0px;
+  width: 120%;
+  height: 50px;
+  flex: 1;
+}
+.AlumniSignUp .buttons .btn2,.StudentSignUp .buttons .btn2{
+  border: none;
+  border-radius: 0px 5px 0px 0px;
+  width: 120%;
+  height: 50px;
+  flex: 1;
+}
+
+.AlumniSignUp .buttons .btn1:focus,.StudentSignUp .buttons .btn1:focus{
+  background-color: #494b9b;
+  color: white  ;
+}
+
+.AlumniSignUp h2 ,.StudentSignUp h2{
+  text-align: center;
+}
+
+.AlumniSignUp form ,.StudentSignUp form {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);;
+  display: flex;
+  flex-direction: column;
+}
+.AlumniSignUp .email,.password,.name,.linkedin,.expertise,.file,.currentJob,.graduation,.achievements {
+  display: flex;
+  width: 100%;
+  padding: 0px 20px;
+}
+.AlumniSignUp .email .icons,.password .icons,.name .icons,.linkedin .icons,.achievements .icons,.expertise .icons,.file .icons,.currentJob .icons,.graduation .icons{
+  margin: 10px 0px;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right:0;
+  background-color: white;
+  height: 45px;
+  font-size: 2.76rem;
+  border-radius: 5px 0px 0px 5px;
+}
+.AlumniSignUp .email input,.password input,.name input,.linkedin input,.achievements input,.expertise input,.file input,.currentJob input,.graduation input{
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: white;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left:0;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 16px;
+}
+.StudentSignUp .email,.password,.name,.currentYear{
+  display: flex;
+  width: 100%;
+  padding: 0px 20px;
+}
+.StudentSignUp .email .icons,.password .icons,.name .icons,.currentYear .icons{
+  margin: 10px 0px;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right:0;
+  background-color: white;
+  height: 45px;
+  font-size: 2.76rem;
+  border-radius: 5px 0px 0px 5px;
+}
+.StudentSignUp .email input,.password input,.name input,.currentYear input{
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: white;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left:0;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 16px;
+}
+
+
+.AlumniSignUp .btn,.StudentSignUp .btn{
+  background-color: #424874;
+  color: #fff;
+  border: none;
+  margin: 10px 20px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.AlumniSignUp button:hover,.StudentSignUp button:hover {
+  background-color: #494b9b;
+}
+
+
+.Alumni{
+  background-color: #F4EEFF;
+  width: 100%;
+  height: 640px;
+  overflow-y: auto;
+  padding-top: 30px;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto auto;
+}
+
+.Alumni::-webkit-scrollbar{
+  width: 0;
+}
+
+
+.Alumni-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e2e2e2;
+  height: 430px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.Alumni-card-image{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+
+  border-radius: 5px;
+}
+.Alumni-card-image  img{
+  border-radius: 5px;
+}
+
+.Alumni-card-content {
+  padding: 10px;
+}
+
+.Alumni-card-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.Alumni-card-current-role,
+.Alumni-card-graduation-year {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.Alumni-card-linkedin a {
+  text-decoration: none;
+  color: #0077b5;
+}
+
+.Alumni-card-expertise {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.Alumni-card-achievements {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.Alumni-card-actions{
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  font-size: 2rem;
+}
+
+.Events .add {
+  position: absolute; 
+  right: 10px;
+  z-index: 3;
+  bottom: 3px;
+  font-size: 4rem;
+}
+.Events::-webkit-scrollbar{
+  width: 0;
+}
+
+.Events {
+  background-color: #F4EEFF;
+  width: 100%;
+  overflow-y: auto; 
+  height: 650px; 
+}
+
+.events{
+  margin-top: 20px;
+  width: 100%;
+  display:grid;
+  grid-template-columns: auto ;
+  justify-content: space-around;
+}
+
+.event-card{
+  margin: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 1px solid #e1e1e1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 800px;
+  align-items: center; 
+  cursor: pointer;
+}
+.event-card span{
+  color: #424874;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.event-card .event-card-back{
+  margin-left: 50px;
+}
+.event-card .expanded-details{
+    grid-column: 1 / 3;
+}
+
+.event-card .event-card-back button{
+  padding: 8px;
+  /* height: 50px; */
+  color: white;
+  /* width: 80px; */
+  margin: 4px 25px;
+  border-radius: 5px;
+  background-color: #424874;
+  transition: 0.5s; 
+}
+
+
+.CreateEvent {
+  background-color: #f7f7f7;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+.CreateEvent h2 {
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.CreateEvent label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.CreateEvent input[type="text"],
+.CreateEvent input[type="date"],
+.CreateEvent input[type="time"],
+.CreateEvent input[type="checkbox"],
+.CreateEvent textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.CreateEvent textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.CreateEvent button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.CreateEvent button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.News .add {
+  position: absolute; 
+  right: 10px;
+  z-index: 3;
+  bottom: 3px;
+  font-size: 4rem;
+}
+.News::-webkit-scrollbar{
+  width: 0;
+}
+
+.News {
+
+  background-color: #F4EEFF;
+  width: 100%;
+  overflow-y: auto;
+  height: 650px; 
+}
+
+
+.CreateNews {
+  background-color: #f7f7f7;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+.CreateNews h2 {
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.CreateNews label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.CreateNews input[type="text"],
+.CreateNews textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.CreateNews textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.CreateNews button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.CreateNews button:hover {
+  background-color: #0056b3;
+}
+
+
+/* JobNewsForm.css */
+
+.jobform-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+.jobform-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.jobform-group {
+  margin: 10px 0;
+}
+
+.jobform-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.jobform-group input[type="text"],
+.jobform-group input[type="date"],
+.jobform-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.jobform-group textarea {
+  resize: vertical;
+}
+
+.jobform-group button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.jobform-group button:hover {
+  background: #0056b3;
+}
+
+.Jobs{
+  /* background: linear-gradient(312deg, rgba(244, 238, 255, 1) 18%, rgba(220, 214, 247, 1) 33%, rgba(166, 177, 225, 1) 74%); */
+  background-color: #F4EEFF;
+  height: 640px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.Jobs::-webkit-scrollbar{
+  width: 0;
+}
+
+.Jobs .add{
+  position: absolute; 
+  right: 10px;
+  z-index: 3;
+  bottom: 3px;
+  font-size: 4rem;
+}
+.jobs{
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+}
+
+.job-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e1e1e1;
+  background: linear-gradient(90deg, rgba(221, 255, 250, 1) 0%, rgba(188, 243, 255, 1) 50%, rgba(186, 229, 255, 1) 100%);
+  margin: 20px 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 300px;
+  min-height: 410px;
+  overflow-y: auto;
+  align-items: center;
+  cursor: pointer;
+}
+
+.job-card::-webkit-scrollbar{
+  width: 0;
+}
+.job-card:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.job-card .company-logo {
+  flex: 0 0 100px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.job-card .company-logo img {
+  max-width: 50px;
+  border-radius: 50%;
+}
+.job-card .job-details h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.job-card .job-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.news-card {
+  background-color: rgb(248, 248, 248);
+  height: 420px;
+  border-radius: 10px;
+  margin: 30px;
+  max-width: 400px;
+  margin: 20px 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.news-card-content {
+  padding: 16px;
+}
+
+.news-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.news-card-date {
+  font-size: 0.875rem;
+  color: gray;
+  margin-bottom: 8px;
+}
+
+.news-card-description {
+  font-size: 1rem;
+}
+
+.news-card-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  /* padding: 16px; */
+}
+.news-card-actions .news-card-button{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.news-card-actions .news-card-button:hover{
+  background-color: #0056b3;
+}
+
+.single-News {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  /* padding: 2rem; */
+}
+.News{
+  width: 100%;
+}
+.news{
+  display:grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto auto;
+}
+.News-title {
+  margin: 0rem 0;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Ysabeau', sans-serif;
+}
+.News-details{
+  box-shadow: #333;
+  padding: 20px 20px;
+}
+.News-info {
+  font-size: 1.2rem;
+  color: #888;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.News-date {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 2px solid rgba(224, 234, 239, 1);
+}
+.single-News-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 2px solid black; */
+}
+.News-image {
+  max-width: 100%;
+  margin: 2rem 0;
+  /* border: 1px solid #1c1717; */
+  border-radius: 4px;
+}
+
+.News-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 2rem 0;
+}
+
+.Chat .chatMenu{
+  /* background-color:#ccc; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.conversation {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: auto auto;
+  border-radius: 5px;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.conversation:hover {
+  background-color: rgb(245, 243, 243);
+}
+
+.conversationImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.conversationName {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .conversationName {
+    display: none;
+  }
+}
+
+.Chat{
+  /* border: 2px solid black; */
+  display: flex;
+  width: 100%;
+  height: 640px;
+  position: relative;
+}
+.Chat .chatMenu{
+  flex: 1; 
+}
+.Chat .chatBox{
+  flex: 3; 
+}
+.Chat .chatBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Chat .chatBox .inputField input{
+  border-radius: 5px;
+  width: 80%;
+  height: 50px;
+}
+.Chat .chatBox .inputField button{
+  padding: 8px;
+  height: 50px;
+  width: 80px;
+  margin: 4px 25px;
+  border-radius: 5px;
+  background-color: #424874;
+  transition: 0.5s;
+}
+.Chat .chatBox .chat-messages{
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.messageTop{
+    display: flex;
+}
+
+.messageImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.messageText{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #1877f2;
+    color: white;
+    max-width: 300px;
+}
+
+.messageBottom{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.message.own{
+    align-items: flex-end;
+}
+
+.message.own .messageText{
+    background-color: rgb(245, 241, 241);
+    color: black;
+}
+
+
+.Footer{
+  font-size: 1.1rem;
+  font-weight: bolder;
+  /* background-color: #f7f5f5; */
+  padding: 0px 25px;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+.Footer .container{
+  margin-top: 20px;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.Footer .AboutUs{
+  padding: 29px;
+  text-align: left;
+  width: 60%;
+}
+.Footer .Socials,.Contact{
+  padding: 30px 30px;
+  width: 20%;
+}
+
+.Footer .Socials ul>li a,.Contact ul>li a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.Footer .Socials ul>li,
+.Contact ul>li {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+
+.Footer .Socials ul>li::before,
+.Contact ul>li::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #424874;
+  transition: width 0.8s ease-in-out;
+}
+
+.Footer .Socials ul>li:hover::before,
+.Contact ul>li:hover::before {
+  width: 100%; 
+}
+
+
+.Footer .links{
+  border: none;
+  padding: 15px;
+  border-top: 3px solid #424874;
+  border-bottom: 3px solid #424874;
+  margin: 0px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer .copyright{
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin:0px 530px;
+  margin-top: 25px;
+}
+
+
+.Recent{
+  /* overflow-y: auto; */
+  background-color: #ccc;
+  padding: 30px;
+}
+
+.Recent .card{
+  
+  padding: 30px 50px;
+  display: flex;
+}
+.Recent .card .details h2{
+  font-size: 2rem;
+  /* margin-top: 5px; */
+  padding-top: 10px;
+  margin-left: 15px;
+  border: none;
+  width: 130px;
+  border-bottom: 5px solid #494b9b;
+  border-radius: 5px;
+  /* color: #ccc; */
+}
+.Recent .card .details a{
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #494b9b;
+  color: #ffffff;
+  padding: 8px;
+  margin-left: 18px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.Recent .card .details ul {
+  list-style-type: '\2605';
+  padding: 13px;
+  margin-right: 20px;
+}
+.Recent .card .details ul li{
+  margin: 20px;
+  font-size: 1.3rem;
+}
+.Recent .card .details ul li::marker{
+  font-size: 1.5rem;
+  color: #494b9b;
+}
+.Recent .card .image{
+  width: 800px;
+  height: 420px;
+}
+.Recent .card .image img{
+  margin-top: 25px;
+  width: 100%;
+  height: 100%;
+}
